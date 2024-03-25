@@ -1,610 +1,626 @@
-html{
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+p,
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+header {
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+.margin-0 {
+  margin: 0 auto;
+}
+h1 {
+  background-color: gold;
+  border: 4px solid black;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex .width-total li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.flex .width-total li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+}
+.flex .width-total li:hover::after {
+  width: 100%;
+}
+.width-60 {
+  width: 60%;
+}
+.total {
+  height: 100%;
+  width: 100%;
+}
+.fa-bars {
+  display: none;
+}
+.first {
+  width: 100%;
+  background-image: url("./images/pic1.jpg");
+  background-size: cover;
+  height: 90vh;
+  border-bottom-right-radius: 10%;
+}
+.one {
+  height: 100%;
+  width: 30%;
+  margin-left: 300px;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.one h2 span {
+  display: block;
+  background-color: black;
+  color: gold;
+  max-width: 350px;
+}
+button {
+  margin-top: 10px;
+  border-radius: 5%;
+  height: 50px;
+  width: 150px;
+}
+.gets {
+  background-color: black;
+  color: white;
+}
+.contact {
+  border: 1px solid black;
+  background: transparent;
+  display: inline-block;
+}
+.contact:hover {
+  background-color: black;
+  color: wheat;
+}
+.margin-70 {
+  margin: 70px auto;
+}
+.text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+}
+.text i {
+  color: grey;
+  font-size: 3rem;
+  padding: 20px;
+}
+.third {
+  background-image: url(https://wvdigitalbrand.com/wp-content/uploads/2020/06/blob-grad.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 110vh;
+  background-color: #eeeeee;
+}
+
+.header {
+  font-size: 36px;
+  text-align: left;
+  width: 40%;
+  margin-right: 50px;
+}
+.text-p {
+  width: 60%;
+  font-size: 30px;
+  text-align: left;
+}
+.flex h2 span {
+  display: block;
+}
+.box {
+  width: 30%;
+  height: 250px;
+  background-color: white;
+}
+.box i {
+  padding: 20px;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.bg-blue {
+  background-color: #6aaef8;
+}
+.blue {
+  color: #6aaef8;
+}
+.round {
+  border-radius: 50%;
+}
+.bg-orange {
+  background-color: #ff8e12;
+}
+.orange {
+  color: #ff8e12;
+}
+.positioning {
+  display: flex;
+  height: 350px;
+}
+.pattern {
+  width: 20%;
+  height: 100%;
+  background-color: white; /* Background color */
+  background-image: radial-gradient(
+    circle,
+    #6aaef8 2px,
+    transparent 1px
+  ); /* Dot pattern */
+  background-size: 30px 30px; /* Adjust dot size and spacing */
+}
+.image-container {
+  display: flex;
+  width: 27%;
+}
+.img1 {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://img.freepik.com/premium-photo/living-green-wall-vertical-garden-indoors-with-flowers-plants-artificial-lighting-meeting-boardroom-modern-office-building_709047-1646.jpg?w=360);
+  background-size: cover;
+  margin: -50px 0 0 0;
+  z-index: 900;
+}
+.img2 {
+  margin: 0px 0 0 -200px;
+  height: 400px;
+  width: 100%;
+  background-image: url("https://img.freepik.com/premium-photo/green-office-room_950558-7034.jpg?w=360");
+  background-size: cover;
+  z-index: 500;
+}
+.content {
+  padding: 30px 0 0 100px;
+  width: 26.5%;
+}
+.content p,
+.content h2 {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.fifth {
+  width: 100%;
+  padding: 20px 0;
+  margin: 50px 0 0 0;
+  height: 160vh;
+  background-image: url("https://wvdigitalbrand.com/wp-content/uploads/2020/06/bg-blob-gradient.svg");
+  background-repeat: no-repeat;
+}
+.flex2 {
+  margin: 50px auto;
+  height: 500px;
+  display: flex;
+}
+.half {
+  width: 50%;
+  height: 100%;
+}
+
+.big-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.big-text button {
+  margin-top: 30px;
+}
+
+.flex2 .image-box {
+  display: flex;
+  justify-content: end;
+}
+.image {
+  width: 400px;
+  height: 450px;
+  background-image: url("./images/pic4.jpg");
+  background-size: cover;
+  border-radius: 3%;
+}
+.small-text {
+  display: flex;
+  font-size: 18px;
+  padding: 20px;
+  width: 250px;
+  height: 110px;
+  margin: 290px 0 0 -455px;
+  border-radius: 3%;
+}
+.small-text i,
+.small-text2 i {
+  margin: 0 15px 0 0;
+  font-size: 1.5rem;
+}
+.small-text p,
+.small-text2 p {
+  margin: 0 0 10px 0;
+}
+.small {
+  font-size: 14px;
+}
+.small-text2 {
+  display: flex;
+  font-size: 18px;
+  padding: 15px;
+  width: 250px;
+  height: 110px;
+  margin: 20px 0 0 -300px;
+  border-radius: 3%;
+}
+.image2 {
+  width: 400px;
+  height: 450px;
+  background-size: cover;
+  background-image: url(./images/pic5.jpg);
+  border-radius: 3%;
+}
+.just-right {
+  display: flex;
+  justify-content: right;
+}
+.sixth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 10px 0;
+}
+
+.sixth h2 {
+  width: 25%;
+  text-align: center;
+  line-height: 55px;
+  font-size: 36px;
+}
+.sixth h2 span {
+  background-color: black;
+  color: gold;
+  padding: 5px;
+}
+.row {
+  padding: 20px 0;
+}
+.row li {
+  width: 22%;
+  display: flex;
+  align-items: center;
+}
+.row i {
+  border: 1px solid #ff8e12;
+  padding: 10px;
+  font-size: 2rem;
+  color: #ff8e12;
+  margin-right: 10px;
+}
+.border {
+  height: 3px;
+}
+.seventh h2 {
+  font-size: 32px;
+}
+.bg-bars {
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(196, 192, 192);
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.bar1 {
+  line-height: 50px;
+  vertical-align: middle;
+  z-index: 10;
+  width: 90%;
+  height: 100%;
+}
+.bar-text {
+  z-index: 12;
+  margin-left: -40px;
+}
+.flex3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.758);
+  height: 250px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.footers {
+  width: 20%;
+  height: 50%;
+}
+.brands {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.brands i:hover {
+  padding: 2px;
+  color: black;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  h1 {
     font-size: 16px;
+  }
 }
-p, ul, h1{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style: none;
-}
-header{
-    padding-top: 20px;
-    top: 0;
-    width: 100%;
-    height: 80px; 
-}
-.margin-0{
+
+@media (max-width: 860px) {
+  body {
+    font-size: 14px;
+  }
+  .small {
+    font-size: 10px;
+  }
+  .fa-bars {
+    display: block;
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+  header h1 {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+  }
+  .first {
+    height: 90vh;
+  }
+  nav {
+    display: none;
+    margin-top: 5px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 3%;
+  }
+  nav ul.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: wheat;
     margin: 0 auto;
-}
-h1{
+  }
+
+  h1 {
     background-color: gold;
     border: 4px solid black;
-}
-nav{
-    width: 60%;
-    max-width: 700px;
-    height: 100%;
-
-}
-.flex{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.flex .width-total li::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: black;
-    display: block;
-    transition: 0.5s;
-    margin: auto;
-
-}
-.flex .width-total li:hover::after{
-    width: 100%;
-}
-.width-60{
-    width: 60%;
-}
-.total{
-    height: 100%;
-    width: 100%; 
-}
-.fa-bars{
-    display: none;
-}
-.first{
-    width: 100%;
-    background-image: url("./images/pic1.jpg");
-    background-size: cover;
-    height: 90vh;
-    border-bottom-right-radius: 10%;    
-}
-.one{
-    height: 100%;
-    width: 30%;
-    margin-left: 300px;
-    font-size: 30px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-.one h2 span{
-    display: block;
-    background-color: black;
-    color: gold;
-    max-width: 350px;
-}
-button{
-    margin-top: 10px;
-    border-radius: 5%;
-    height: 50px;
-    width: 150px;
-}
-.gets{
-    background-color: black;
-    color: white;
-}
-.contact{
-    border: 1px solid black;
-    background: transparent;
-    display: inline-block;
-}
-.contact:hover{
-    background-color: black;
-    color: wheat;
-}
-.margin-70{
-    margin: 70px auto;
-}
-.text{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 60px;
-}
-.text i{
-    color: grey;
-    font-size: 3rem;
-    padding: 20px;
-}
-.third{
-    background-image: url(https://wvdigitalbrand.com/wp-content/uploads/2020/06/blob-grad.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 110vh;
-    background-color: #EEEEEE;
-}
-
-.header{
-    font-size: 36px;
-    text-align: left;
-    width: 40%;
-    margin-right: 50px;
-}
-.text-p{
-    width: 60%;
-    font-size: 30px;
-    text-align: left;
-}
-.flex h2 span{
-    display: block;
-}
-.box{
-    width: 30%;
-    height: 250px;
-    background-color: white;
-}
-.box i{
-    padding: 20px;
-    margin: 5px;
-    font-size: 1.5rem;
-}
-.bg-blue{
-    background-color: #6aaef8;
-}
-.blue{
-    color: #6aaef8;
-}
-.round{
-    border-radius: 50%;
-}
-.bg-orange{
-    background-color: #ff8e12;
-}
-.orange{
-    color: #ff8e12;
-}
-.positioning{
-    display: flex;
-    height: 350px;
-}
-.pattern{ 
-    width: 20%;
-    height: 100%;
-    background-color: white; /* Background color */
-    background-image: radial-gradient(circle, #6aaef8 2px, transparent 1px); /* Dot pattern */
-    background-size: 30px 30px; /* Adjust dot size and spacing */
-}
-.image-container{
-    width: 27%;
-    display: flex;
-}
-.img1{
-    width: 100%;
-    height: 400px;
-    background-image: url(https://img.freepik.com/premium-photo/living-green-wall-vertical-garden-indoors-with-flowers-plants-artificial-lighting-meeting-boardroom-modern-office-building_709047-1646.jpg?w=360);
-    background-size: cover;
-    margin: -50px 0 0 0;
-    z-index: 900;
-}
-.img2{
-    margin: 0px 0 0 -200px;
-    height: 400px;
-    width: 100%;
-    background-image: url("https://img.freepik.com/premium-photo/green-office-room_950558-7034.jpg?w=360");
-    background-size: cover;
-    z-index: 500;
-}
-.content{
-    padding: 30px 0 0 100px;
-    width: 26.5%;
-
-}
-.content p,.content h2{
-    width: 80%;
-    margin-bottom: 20px;
-}
-.fifth{
-    width: 100%;
-    padding: 20px 0;
-    margin: 50px 0 0 0;
-    height: 160vh;
-    background-image: url("https://wvdigitalbrand.com/wp-content/uploads/2020/06/bg-blob-gradient.svg");
-    background-repeat: no-repeat;
-}
-.flex2{
-    margin: 50px auto;
-    height: 500px;
-    display: flex;
-}
-.half{
-    width: 50%;
-    height: 100%;
-}
-
-.big-text{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-}
-.big-text button{
-    margin-top: 30px;
-}
-
-.flex2 .image-box{ 
-    display: flex;
-    justify-content: end;
-}
-.image{
-    width: 400px;
-    height: 450px;
-    background-image: url("./images/pic4.jpg");
-    background-size: cover;
-    border-radius: 3%;
-}
-.small-text{
-    display: flex;
-    font-size: 18px;
-    padding: 20px;
-    width: 250px;
-    height: 110px;
-    margin:290px 0 0 -455px;
-    border-radius: 3%;
-}
-.small-text i, .small-text2 i{
-    margin: 0 15px 0 0;
-    font-size: 1.5rem;
-}
-.small-text p, .small-text2 p{
-    margin: 0 0 10px 0;
-}
-.small{
     font-size: 14px;
-}
-.small-text2{
-    display: flex;
-    font-size: 18px;
-    padding: 15px;
-    width: 250px;
-    height: 110px;
-    margin: 20px 0 0 -300px;
-    border-radius: 3%;
-}
-.image2{
-    width: 400px;
-    height: 450px;
-    background-size: cover;
-    background-image: url(./images/pic5.jpg);
-    border-radius: 3%;
-}
-.just-right{
-    display: flex;
-    justify-content: right;
+  }
+  .flex {
+    width: 100%;
+    flex-direction: column;
+  }
+  .second {
+    height: 70vh;
+  }
 
-}
-.sixth{
+  h2 {
+    width: 100%;
+    font-size: 36px;
+  }
+  .one {
+    width: 100%;
+    margin: 0;
+  }
+  .one h2 span {
+    display: inline;
+  }
+  .width-60 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .text {
+    width: 100%;
+    height: 2%;
+    margin: 20px 0;
+  }
+  .text i {
+    font-size: 2rem;
+    padding: 5px 0;
+  }
+  .third {
+    height: 120vh;
+  }
+  .header {
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+  }
+  .text-p {
+    width: 100%;
+  }
+  .flex h2 span {
+    display: inline;
+  }
+  .box {
+    width: 100%;
+    height: 150px;
+    margin: 6% 0;
+  }
+  .box i {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+  }
+  .box p,
+  .box h3 {
+    padding: 0 10px;
+  }
+  .positioning {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+  }
+  .pattern {
+    display: none;
+  }
+  .img1,
+  .img2 {
+    width: 80%;
+    height: 100%;
+  }
+  .img1 {
+    margin: -50px 0 0 0;
+  }
+  .img2 {
+    margin: 0 0 0 -200px;
+  }
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .content h2 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .fifth {
+    width: 100%;
+    height: 250vh;
+    margin: 0;
+    padding: 0;
+  }
+  .flex2 {
+    flex-direction: column;
+    margin: 30px auto;
+    height: 120vh;
+  }
+  .half {
+    width: 100%;
+    height: 100%;
+  }
+  .big-text {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .big-text p,
+  .big-text h2 {
+    margin: 0;
+    padding: 0;
+  }
+  .flex2 .image-box {
+    justify-content: center;
+  }
+  .image,
+  .image2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 350px;
+  }
+  .small-text {
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .small-text p,
+  .small-text i,
+  .small-text2 p,
+  .small-text2 i {
+    padding: 5px 20px;
+    margin: 0;
+  }
+  .small-text2 {
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sixth {
+    height: 120vh;
+  }
+  .sixth h2 {
+    width: 100%;
+  }
+  .sixth .row,
+  .sixth .row li {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    padding: 10px 0;
-}
-
-.sixth h2{
-    width: 25%;
+  }
+  .sixth li {
+    margin: 30px 0;
+  }
+  .sixth span {
+    font-size: 16px;
+    width: 50%;
     text-align: center;
-    line-height: 55px;
-    font-size: 36px;
-}
-.sixth h2 span{
-    background-color: black;
-    color: gold;
-    padding: 5px;
-}
-.row{
-    padding: 20px 0;
-}
-.row li{
-    width: 22%;
-    display: flex;
-    align-items: center;
-}
-.row i{
-    border: 1px solid #ff8e12;
-    padding: 10px;
-    font-size: 2rem;
-    color: #ff8e12;
-    margin-right: 10px;
-}
-.border{
-    height: 3px;
-}
-.seventh h2{
-    font-size: 32px;
-}
-.bg-bars{
-    padding: 0;
+  }
+  .seventh {
+    margin: 50px 0;
     width: 100%;
-    height: 50px;
-    background-color: rgb(196, 192, 192);
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-}
-.bar1{
-    line-height: 50px;
-    vertical-align: middle;
-    z-index: 10;
-    width: 90%;
-    height: 100%;
-
-}
-.bar-text{
-    z-index: 12;
-    margin-left: -40px;
-}
-.flex3{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer{
-    color: wheat;
-    background-color: rgba(0, 0, 0, 0.758);
-    height: 250px;
-    padding-top: 50px;
-    width: 100%;
-}
-
-.footers{
-    width: 20%;
-    height: 50%;
-}
-.brands{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
     font-size: 20px;
-}
-.brands i:hover{
-    padding: 2px;
-    color: black;
-    background-color: gold;
-    border-radius: 50%;
-}
-@media (max-width: 750px)  { 
-
-    body{
-        font-size: 14px;
-        }
-    .small{
-        font-size: 10px;
-    }
-    .fa-bars{
-        display: block;
-        background-color: black;
-        color: gold;
-        padding: 10px;
-        position: absolute;
-        top: 3%;
-        right: 3%;
-    }
-    header h1{
-        position: fixed;
-        top: 20px;
-        left: 50px;
-    }
-    .first{
-        height: 90vh;
-    }
-    nav{
-        display: none;
-        width: 90%;
-        position: fixed;
-        top: 50px;
-        left: 50px;
-    }
-
-    h1{
-        background-color: gold;
-        border: 4px solid black;
-        font-size: 14px;
-    }
-    .flex{
-        width: 100%;
-    } 
-    nav ul{
-        background-color: wheat;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top:0 ;
-    }
-    .second{
-        height: 70vh;
-    }
-    .flex{
-        flex-direction: column;
-    }
-    h2{
-        width: 100%;
-        font-size: 36px;
-    }
-    .one{
-        width: 100%;
-        margin: 0;
-    }
-    .one h2 span{
-        display: inline;
-    }
-    .width-60{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .text{
-        width: 100%;
-        height: 2%;
-        margin: 20px 0;
-    }
-    .text i{
-        font-size: 2rem;
-        padding: 5px 0;
-    }
-    .third{
-        height: 120vh;
-    }
-    .header{
-        width: 100%;
-        font-size: 20px;
-        margin: 0;
-    }
-    .text-p{
-        width: 100%;
-    }
-    .flex h2 span{
-        display: inline;
-    }
-    .box{
-        width: 100%;
-        height: 150px;
-        margin: 6% 0;
-    }
-    .box i{
-        padding: 10px;
-        margin: 5px;
-        font-size: 1rem;
-    }
-    .box p, .box h3{
-        padding: 0 10px;
-    }
-    .positioning{
-        display: flex;
-        height:90vh ;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .image-container{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 50vh;
-    }
-    .pattern{
-        display: none;
-    }
-    .img1, .img2{
-        width: 80%;
-        height: 100%;
-    }
-    .img1{
-        margin: -50px 0 0 0;
-    }
-    .img2{
-        margin: 0 0 0 -200px;
-    }
-    .content{
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .content h2{
-        width: 100%;
-        font-size: 20px;
-    }
-    .fifth{
-        width: 100%;
-        height: 250vh;
-        margin: 0;
-        padding: 0;
-    }
-    .flex2{
-        flex-direction: column;
-        margin: 30px auto;
-        height: 120vh;
-    }
-    .half{
-        width: 100%;
-        height: 100%;
-    }
-    .big-text{
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 10px 0;
-    }
-    .big-text p, .big-text h2{
-        margin: 0;
-        padding: 0;
-    }
-    .flex2 .image-box{ 
-        justify-content: center;
-    }
-    .image, .image2{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 350px;
-    }
-    .small-text{
-        width: 100%;
-        height: 20%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .small-text p, .small-text i, .small-text2 p, .small-text2 i{
-        padding: 5px 20px;
-        margin: 0;
-    }
-    .small-text2{
-        width: 100%;
-        height: 20%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .sixth{
-        height: 120vh;
-    }
-    .sixth h2{
-        width: 100%;
-    }
-    .sixth .row, .sixth .row li{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .sixth li{
-        margin: 30px 0;
-
-    }
-    .sixth span {
-        font-size: 16px;
-        width: 50%;
-        text-align: center;
-    }
-    .seventh{
-        margin: 50px 0;
-        width: 100%;
-        font-size: 20px;
-    }
-    .seventh h2{
-        text-align: center;
-    }
-    .eighth{
-        margin: 20px 0;
-        width: 100%;
-        height: 40vh;
-        text-align: center;
-    }  
+  }
+  .seventh h2 {
+    text-align: center;
+  }
+  .eighth {
+    margin: 20px 0;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
 }
