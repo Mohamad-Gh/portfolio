@@ -187,17 +187,17 @@ header {
 label span {
   color: #ff4d30;
 }
-.hero-header {
+.title-header {
   text-align: center;
   margin: 0;
+  margin-bottom: 30px;
 }
-.hero-header p {
-  font-size: 20px;
+.title-header h3 {
+  font-size: 26px;
 }
-.hero-header h2 {
+.title-header h2 {
   font-size: 36px;
   margin: 0;
-  margin-bottom: 50px;
 }
 .card-container {
   display: grid;
@@ -225,15 +225,81 @@ label span {
 }
 .car-album {
   margin: 50px 0;
-  background-color: aqua;
 }
 .container-album {
   margin: 0 50px;
 }
-.ablum {
+.album {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  /* flex-wrap: wrap; */
 }
-
+.cars {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 25%;
+  gap: 10px;
+}
+.cars div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  background-color: #e9e9e9;
+  border-radius: 3px;
+  height: 55px;
+}
+.car-img {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-img img {
+  width: 100%;
+}
+.car-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  flex-basis: 25%;
+}
+.car-details-header {
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #ff4d30;
+}
+.car-price {
+  font-size: 30px;
+  font-weight: bold;
+}
+.details-table div {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+.details-table div span {
+  flex-basis: 33%;
+}
+.reserve-btn {
+  height: 50px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff4d30;
+  border: none;
+}
 @media (max-width: 1300px) {
   .full-container {
     width: 100%;
