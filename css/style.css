@@ -9,10 +9,6 @@
 span {
   color: white;
 }
-header {
-  display: flex;
-  align-items: center;
-}
 .blue,
 .footer {
   background-color: #0770b3;
