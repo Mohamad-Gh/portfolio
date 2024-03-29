@@ -2,27 +2,26 @@
   height: 180px;
   border-radius: 50%;
 }
-.bigbackground{
-  background-image: url(../images/Island1.png);
-  background-size: cover;
-  text-align: center;
-  height: 100hv;
-}
-#heading_and_image{
-height: 110vh;
-padding: 20px;
-}
-.svgs{
+
+.svgs {
   height: 30px;
 }
-.footer{
+span {
+  color: white;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+.blue,
+.footer {
   background-color: #0770b3;
 }
-.svg{
+.svg {
   fill: currentColor;
 }
 @media (max-width: 980px) {
-  h2{
+  h2 {
     text-align: center;
   }
 }
