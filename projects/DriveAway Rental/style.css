@@ -300,6 +300,10 @@ label span {
   background-color: #ff4d30;
   border: none;
 }
+.cars .selected {
+  background-color: #ff4d30;
+  color: #ffffff;
+}
 @media (max-width: 1300px) {
   .full-container {
     width: 100%;
