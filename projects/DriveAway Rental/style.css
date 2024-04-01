@@ -300,6 +300,9 @@ label span {
   background-color: #ff4d30;
   border: none;
 }
+.cars {
+  cursor: pointer;
+}
 .cars .selected {
   background-color: #ff4d30;
   color: #ffffff;
