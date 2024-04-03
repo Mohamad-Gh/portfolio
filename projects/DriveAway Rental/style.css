@@ -231,10 +231,9 @@ label span {
 }
 .album {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  gap: 50px;
-  /* flex-wrap: wrap; */
 }
 .cars {
   font-size: 24px;
@@ -245,6 +244,7 @@ label span {
   align-items: flex-start;
   flex-basis: 25%;
   gap: 10px;
+  cursor: pointer;
 }
 .cars div {
   display: flex;
@@ -256,7 +256,7 @@ label span {
   height: 55px;
 }
 .car-img {
-  flex-basis: 40%;
+  flex-basis: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +270,7 @@ label span {
   justify-content: space-between;
   text-align: center;
   flex-basis: 25%;
+  min-width: 250px;
 }
 .car-details-header {
   height: 50px;
@@ -283,13 +284,15 @@ label span {
 }
 .details-table div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   margin: 10px 0;
   border: 1px solid black;
 }
-.details-table div span {
-  flex-basis: 33%;
+
+.details-table div span:nth-child(1),
+.details-table div span:nth-child(3) {
+  flex-basis: 49%;
 }
 .reserve-btn {
   height: 50px;
@@ -300,12 +303,79 @@ label span {
   background-color: #ff4d30;
   border: none;
 }
-.cars {
-  cursor: pointer;
-}
 .cars .selected {
   background-color: #ff4d30;
   color: #ffffff;
+}
+.divider {
+  padding: 50px 0;
+  background-color: #000;
+  color: #ffffff;
+}
+.title-divider {
+  text-align: center;
+  margin: auto;
+}
+.title-divider h2 {
+  font-size: 46px;
+}
+.title-divider span {
+  color: #ff4d30;
+}
+.testimonials {
+  background-color: #f8f8f8;
+  margin: 50px 0;
+  text-align: center;
+}
+.container-testimonials {
+  margin: 0 50px;
+}
+.testimonials h2 {
+  font-size: 46px;
+}
+.testimonials h3 {
+  font-size: 26px;
+}
+.testimonials-title {
+  margin: 0 300px;
+  margin-bottom: 50px;
+}
+.testimonials-album {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.testimonials-box {
+  background-color: #fff;
+  padding: 50px;
+  text-align: left;
+  flex-basis: 40%;
+}
+.testimonials-box p {
+  font-size: 24px;
+}
+.testimonials-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials-person {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+.testimonials-person p {
+  font-size: 16px;
+}
+.testimonials-person svg {
+  color: #ff4d30;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 @media (max-width: 1300px) {
   .full-container {
@@ -324,12 +394,18 @@ label span {
     display: flex;
     border: 1px solid #000;
   }
-  /* .form-grid {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-  } */
+
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .cars {
+    flex-basis: 100%;
+  }
+  .car-img {
+    flex-basis: 60%;
+  }
+  .testimonials-title {
+    margin: 0;
   }
 }
 @media (max-width: 800px) {
@@ -348,11 +424,17 @@ label span {
   .back-img {
     display: none;
   }
-  /* .form-grid {
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-  } */
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .car-img {
+    flex-basis: 100%;
+  }
+  .car-details {
+    flex-basis: 100%;
+  }
+
+  .testimonials-album {
+    flex-direction: column;
   }
 }
