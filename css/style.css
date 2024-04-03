@@ -2,7 +2,9 @@
   height: 180px;
   border-radius: 50%;
 }
-
+.fab {
+  color: red;
+}
 .svgs {
   height: 30px;
 }
