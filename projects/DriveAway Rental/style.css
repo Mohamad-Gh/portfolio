@@ -8,7 +8,9 @@ body {
 * {
   margin: 0;
   padding: 0;
+  scrollbar-color: #ff4d30 #ffffffa0;
 }
+
 header {
   top: 0;
   font-weight: bold;
@@ -153,6 +155,9 @@ header {
 .form-grid-item {
   display: flex;
   flex-direction: column;
+}
+.submit {
+  cursor: pointer;
 }
 .label {
   display: flex;
@@ -324,7 +329,7 @@ label span {
 }
 .testimonials {
   background-color: #f8f8f8;
-  margin: 50px 0;
+  padding: 50px 0;
   text-align: center;
 }
 .container-testimonials {
@@ -376,6 +381,104 @@ label span {
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
+}
+.faq {
+  margin: 50px auto;
+  background-image: url(./images/car_faq_section.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.container-faq {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+}
+.faq-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-title h3 {
+  font-size: 1.5rem;
+}
+.faq-title h2 {
+  font-size: 2.5rem;
+}
+.faq-qeustions-container {
+  text-align: left;
+  counter-reset: item-counter;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.faq-qeustions-container {
+  cursor: pointer;
+  background-color: #fff;
+}
+.questions {
+  counter-increment: item-counter;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.questions div::before {
+  content: counter(item-counter) ". ";
+}
+.questions.selected {
+  background-color: #ff4d30;
+  color: #ffffff;
+  box-shadow: 0 10px 10px rgba(243, 99, 3, 0.3);
+}
+.responses {
+  color: #878585;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 50px;
+}
+.responses.selected {
+  padding: 20px 50px;
+  height: auto;
+}
+.app {
+  padding: 50px 100px;
+  background-image: url(https://car-rental-ten.vercel.app/static/media/bg02.3efbc4567749d0a5671e.png);
+  background-size: cover;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 25px;
+}
+.app-container h2 {
+  font-size: 3rem;
+}
+.app-box {
+  display: flex;
+  gap: 50px;
+}
+.footer {
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 25%;
+}
+.footer-box a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-box span {
+  font-weight: bold;
+  color: #ff4d30;
 }
 @media (max-width: 1300px) {
   .full-container {
