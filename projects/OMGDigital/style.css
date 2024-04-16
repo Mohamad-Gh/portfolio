@@ -472,11 +472,13 @@ footer {
     position: fixed;
     top: 3%;
     right: 3%;
+    z-index: 1000;
   }
   header h1 {
     position: fixed;
     top: 20px;
     left: 50px;
+    z-index: 1000;
   }
   .first {
     height: 90vh;
