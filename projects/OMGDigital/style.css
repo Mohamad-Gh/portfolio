@@ -469,7 +469,7 @@ footer {
     background-color: black;
     color: gold;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 3%;
     right: 3%;
   }
