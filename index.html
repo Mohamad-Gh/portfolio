@@ -1,231 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamad's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveAway Rentals</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-    <!-- section 0-->
-    <section>
-      <div class="container">
-        <!-- right now its empty-->
-      </div>
-            <!-- section 1-->
-<header class="blue">
-      <div class="container  ">
-        <div class="d-flex align-items-center flex-wrap justify-content-center p-3">
-          <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <span class="fs-4">Mohamad's Portfolio</span>
-          </a>
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active bg-warning text-dark" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link text-warning">Skills</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link text-warning">Projects</a></li>
-            <li class="nav-item"><a href="#contact_me" class="nav-link text-warning">Contact Me</a></li>
-          </ul>
+  <body>
+    <header>
+      <div class="full-container">
+        <div class="container-header">
+          <img class="company_logo" src="./images/logo.png" />
+          <nav>
+            <ul class="navigator">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Vehicle Model</a></li>
+              <li><a href="">Testimonials</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="sign-in">
+            <div>
+              <button class="btn">Sign in</button>
+              <button class="btn btn-nav">Register</button>
+            </div>
+          </div>
+          <div class="mobile-hamb">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="tabler-icon tabler-icon-menu-2"
+            >
+              <path d="M4 6l16 0"></path>
+              <path d="M4 12l16 0"></path>
+              <path d="M4 18l16 0"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
-    </section>
-   
-
-    <!-- section 2 ABOUT-->
-    <section id="About">
-      <div class="container pb-5">
-        <div class="p-5 text-center rounded-3">
-          <h1 class="text-body-emphasis">About</h1>
-          <img class="profile-img" src="./images/mypic.jpg" alt="my picture">
-          <p class="col-lg-6 mx-auto fs-4 text-muted">
-            Hi, I'm Mohamad Ghalebizade, a passionate <em>Front-end</em> and <em>Back-end Developer</em>. Currently, living in Canada <i class="fab fa-canadian-maple-leaf"></i> and looking for job. 
+    <main>
+      <section class="first">
+        <div class="full-container">
+          <div class="container">
+            <div class="content-card">
+              <div class="content">
+                <h2>Plan your trip now</h2>
+                <h1>Save <span>big</span> with our car rental</h1>
+                <p>
+                  Rent the car of your dreams. Unbeatable prices, unlimited
+                  miles, flexible pick-up options and much more.
+                </p>
+                <div class="buttons">
+                  <button class="btn btn-book">
+                    Book Ride &nbsp;
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-circle-check"
+                    >
+                      <path
+                        d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+                      ></path>
+                      <path d="M9 12l2 2l4 -4"></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn-dark">
+                    Learn More &nbsp;
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-chevron-right"
+                    >
+                      <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <img class="content-img" src="./images/Audi-front-page.png" />
+            </div>
+          </div>
+        </div>
+        <img class="back-img" src="./images/background_desing.png" />
+      </section>
+      <section class="booking-form">
+        <div class="full-container">
+          <div class="container-form">
+            <div><h3>Book a car</h3></div>
+            <form class="form-grid">
+              <div class="form-grid-item">
+                <label class="label"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="input-icon"
+                  >
+                    <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path
+                      d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"
+                    ></path>
+                  </svg>
+                  Select Your Car Type
+                  <span>*</span>
+                </label>
+                <select>
+                  <option>Select your car type</option>
+                  <option>Hyundai Ioniq 6</option>
+                  <option>Chevrolet Corvette Z06</option>
+                  <option>Kia EV6</option>
+                  <option>Audi A6</option>
+                  <option>Audi A6 Allroad</option>
+                  <option>BMW M4 CSL</option>
+                </select>
+              </div>
+              <div class="form-grid-item">
+                <label class="label"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="input-icon"
+                  >
+                    <path
+                      d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                      fill="currentColor"
+                      stroke-width="0"
+                    ></path>
+                  </svg>
+                  Pick-Up
+                  <span>*</span>
+                </label>
+                <select>
+                  <option>Select pick up location</option>
+                  <option>Vancouver</option>
+                  <option>Victoria</option>
+                  <option>Kelowna</option>
+                  <option>Kamloops</option>
+                  <option>Prince George</option>
+                  <option>Nanaimo</option>
+                </select>
+              </div>
+              <div class="form-grid-item">
+                <label class="label">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="input-icon"
+                  >
+                    <path
+                      d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                      fill="currentColor"
+                      stroke-width="0"
+                    ></path>
+                  </svg>
+                  Drop-off
+                  <span>*</span>
+                </label>
+                <select>
+                  <option>Select drop off location</option>
+                  <option>Vancouver</option>
+                  <option>Victoria</option>
+                  <option>Kelowna</option>
+                  <option>Kamloops</option>
+                  <option>Prince George</option>
+                  <option>Nanaimo</option>
+                </select>
+              </div>
+              <div class="form-grid-item">
+                <label class="label">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="input-icon"
+                  >
+                    <path
+                      d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M16 3l0 4"></path>
+                    <path d="M8 3l0 4"></path>
+                    <path d="M4 11l16 0"></path>
+                    <path d="M8 15h2v2h-2z"></path>
+                  </svg>
+                  Pick-Up Date
+                  <span>*</span>
+                </label>
+                <input class="Date" type="date" />
+              </div>
+              <div class="form-grid-item">
+                <label class="label">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="input-icon"
+                  >
+                    <path
+                      d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M16 3l0 4"></path>
+                    <path d="M8 3l0 4"></path>
+                    <path d="M4 11l16 0"></path>
+                    <path d="M8 15h2v2h-2z"></path>
+                  </svg>
+                  Drop-off Date
+                  <span>*</span>
+                </label>
+                <input class="Date" type="date" />
+              </div>
+              <div class="form-grid-item">
+                <label></label>
+                <input class="submit" type="submit" value="Search" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="hero-section">
+        <div class="full-container">
+          <div class="container">
+            <div class="title-header">
+              <h3>Plan your trip now</h3>
+              <h2>Quick & easy car rental</h2>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="./images/car-card.png" />
+                <h3>Select Car</h3>
+                <p>
+                  We offers a big range of vehicles for all your driving needs.
+                  We have the perfect car to meet your needs
+                </p>
+              </div>
+              <div class="card">
+                <img src="./images/person-card.png" />
+                <h3>Contact Operator</h3>
+                <p>
+                  Our knowledgeable and friendly operators are always ready to
+                  help with any questions or concerns
+                </p>
+              </div>
+              <div class="card">
+                <img src="./images/travel-card.png" />
+                <h3>Let's Drive</h3>
+                <p>
+                  Whether you're hitting the open road, we've got you covered
+                  with our wide range of cars
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="car-album">
+        <div class="full-container">
+          <div class="container-album">
+            <div class="title-header">
+              <h3>Vehicle Models</h3>
+              <h2>Our rental fleet</h2>
+              <p>
+                Choose from a variety of our amazing vehicles to rent for your
+                next adventure or business trip
+              </p>
+            </div>
+            <div class="album">
+              <div class="cars">
+                <div id="Hyundai" class="selected">Hyundai Ioniq 6</div>
+                <div id="chevrolet">Chevrolet Corvette Z06</div>
+                <div id="Kia">Kia EV6</div>
+                <div id="Audi_A6">Audi A6</div>
+                <div id="Audi_All">Audi A6 Allroad</div>
+                <div id="BMW">BMW M4 CSL</div>
+              </div>
+              <div class="car-img">
+                <img src="./images/Hyundai.png" />
+              </div>
+              <div class="car-details">
+                <div class="car-details-header">
+                  <span id="price" class="car-price">45 $ </span>/ rent per day
+                </div>
+                <div class="details-table">
+                  <div>
+                    <span>Model</span><span>|</span><span id="model">Audi</span>
+                  </div>
+                  <div>
+                    <span>Mark</span><span>|</span><span id="mark">A1</span>
+                  </div>
+                  <div>
+                    <span>Year</span><span>|</span><span id="year">2012</span>
+                  </div>
+                  <div>
+                    <span>Doors</span><span>|</span><span id="doors">4/5</span>
+                  </div>
+                  <div>
+                    <span>AC</span><span>|</span><span id="ac">yes</span>
+                  </div>
+                  <div>
+                    <span>Transmission</span><span>|</span
+                    ><span>Automatic</span>
+                  </div>
+                  <div>
+                    <span>Fuel</span><span>|</span><span>Gasoline</span>
+                  </div>
+                </div>
+                <div>
+                  <a><button class="reserve-btn">Reserve NOW</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="divider">
+        <div class="title-divider">
+          <h2>Save big with our cheap car rental!</h2>
+          <h3>Top Airports. Local Suppliers. <span>24/7</span> Support.</h3>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="full-container">
+          <div class="container-testimonials">
+            <div class="testimonials-title">
+              <h3>Reviewed by Celebrities</h3>
+              <h2>Client's Testimonials</h2>
+              <p>
+                Discover the positive impact we've made on the our clients by
+                reading through their testimonials. Our clients have experienced
+                our service and results, and they're eager to share their
+                positive experiences with you.
+              </p>
+            </div>
+            <div class="testimonials-album">
+              <div class="testimonials-box">
+                <p>
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "
+                </p>
+                <div class="testimonials-person">
+                  <img
+                    src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kuRZa261wcEzQXpTQhnkqQ.jpeg"
+                  />
+                  <div>
+                    <h3>Lance Stroll</h3>
+                    <p>Montreal</p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-quote"
+                    >
+                      <path
+                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                      ></path>
+                      <path
+                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-box">
+                <p>
+                  "The car was in great condition and made our trip even better.
+                  Rental rates were awesome. Highly recommend for this car
+                  rental website!"
+                </p>
+                <div class="testimonials-person">
+                  <img
+                    src="https://pbs.twimg.com/media/FgK1YH4XwAIoIob?format=jpg&name=large"
+                  />
+                  <div>
+                    <h3>Nicholas Latifi</h3>
+                    <p>Montreal</p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="tabler-icon tabler-icon-quote"
+                    >
+                      <path
+                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                      ></path>
+                      <path
+                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container-faq">
+          <div class="faq-title">
+            <h3>FAQ</h3>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Frequently Asked Questions About the Car Rental Booking Process on
+              Our Website: Answers to Common Concerns and Inquiries.
+            </p>
+          </div>
+          <div class="faq-qeustions-container">
+            <div class="QA-box">
+              <div class="questions selected">
+                <div>What is special about comparing rental car deals?</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="responses selected">
+                Comparing rental car deals is important as it helps find the
+                best deal that fits your budget and requirements, ensuring you
+                get the most value for your money. By comparing various options,
+                you can find deals that offer lower prices, additional services,
+                or better car models. You can find car rental deals by
+                researching online and comparing prices from different rental
+                companies.
+              </p>
+            </div>
+            <div class="QA-box">
+              <div class="questions">
+                <div>How do I find the car rental deals?</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="responses">
+                You can find car rental deals by researching online and
+                comparing prices from different rental companies. Websites such
+                as Expedia, Kayak, and Travelocity allow you to compare prices
+                and view available rental options. It is also recommended to
+                sign up for email newsletters and follow rental car companies on
+                social media to be informed of any special deals or promotions.
+              </p>
+            </div>
+            <div class="QA-box">
+              <div class="questions">
+                <div>How do I find such low rental car prices?</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p class="responses">
+                Book in advance: Booking your rental car ahead of time can often
+                result in lower prices. Compare prices from multiple companies:
+                Use websites like Kayak, Expedia, or Travelocity to compare
+                prices from multiple rental car companies. Look for discount
+                codes and coupons: Search for discount codes and coupons that
+                you can use to lower the rental price. Renting from an
+                off-airport location can sometimes result in lower prices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="app">
+        <div class="app-container">
+          <h2>Download our app to get most out of it</h2>
+          <p>
+            Thrown shy denote ten ladies though ask saw. Or by to he going think
+            order event music. Incommode so intention defective at convinced.
+            Led income months itself and houses you.
           </p>
-        </div>
-      </div>
-
-    </section>
-    <!-- section 3 Skills-->
-    <section id="skills">
-      <div class="container col-xxl-12">
-        <div class="row flex-lg-row-reverse align-items-center g-5 ">
-          <div class="col-12 col-sm-12 col-lg-4">
-            <img id="mypicture" src="./images/mypic2.JPG" class="d-block mx-lg-auto img-fluid text-center" alt="Bootstrap Themes" height="400" loading="lazy">
-          </div>
-          <div class="col-lg-8">
-            <div class="row">
-              <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Skills</h1>
-            </div>
-            <div class="row">
-              <div class="col">
-                <ul class="lead">
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul class="lead">
-                  <li>Node.js</li>
-                  <li>jQuery</li>
-                  <li>Express.js</li>
-                  <li>SQL</li>
-                  <li>PostgreSQL</li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul class="lead">
-                  <li>Python</li>
-                  <li>C</li>
-                  <li>Git/Github</li>
-                  <li>UX / UI design</li>
-                </ul>
-              </div>
-            </div>
+          <div class="app-box">
+            <a><img src="./images/google_play.png" /></a>
+            <a><img src="./images/App_store.png" /></a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- section 4: Projects-->
-    <section id="projects">
-      <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <div>
-            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-5">Projects</h1>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/DriveAway Rental/index.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/DriveAway Rentals.PNG" data-holder-rendered="true">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">This is a responsive Car Rental website (Still in Progress)).</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/OMGDigital/index.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/OMGdigital.PNG" data-holder-rendered="true">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">This is a responsive E-commerce type website to help grow a business faster.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/Simon_Game/simon_game.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/simon_game.PNG" data-holder-rendered="true">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">This is a fun game called Simon Game. You can try it and test your memory</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/Drum Kit/drum_kit.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/drum_Kit.PNG" data-holder-rendered="true">
-                </a>
-                  <div class="card-body">
-                  <p class="card-text">This is a drum kit webpage. However it's hard to play a cool song with them. But you can have fun for sure!</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/Dice/dicee.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/Dice.PNG" data-holder-rendered="true">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">It's time to see who is more lucky. Don't take it personal. it's all computer randomness!</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./projects/TinDog/tin_Dog.html">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/Ting_Dog.PNG" data-holder-rendered="true">
-                </a>
-                <div class="card-body">
-                  <p class="card-text">it's a simple start-up webpage for taking care of cute dogs and finding a home for these beautiful creators.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-box">
+          <h3>Car Rental</h3>
+          <p>
+            We offers a big range of vehicles for all your driving needs. We
+            have the perfect car to meet your needs.
+          </p>
+          <di><i class="fa-solid fa-phone"></i> (123) -456-789</di>
+          <div><i class="fa-regular fa-envelope"></i><a href=""> carrental@gmail.com</a></div>
+          <div>Design by <span>MGH</span> 2024</div>
         </div>
-      </div>
-    </section>
-
-    <!-- section 5-->
-   <section id="contact_me">
-    <div class="container">
-      <div class="position-relative p-5 text-center text-muted bg-body">
-        <svg class="bi mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
-        <h1 class="text-body-emphasis pb-3">Get In Touch</h1>
-        <p class="col-lg-6 mx-auto mb-5 lead">If you care about Web, Python or anything else, send me text. 
-        </p>
-        <a href="mailto:mohamad.ghalebizade@gmail.com"><button class="btn btn-lg btn-primary px-5 mb-5 rounded-5" type="button">Contact Me</button></a>
-      </div>
-    </div>
-    </section>
-    <!-- section 6-->
-<section class="footer">
-    <div class="container py-3">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-light">© 2024 Mohamad, Gh</span>
+        <div class="footer-box">
+          <h3>COMPANY</h3>
+          <div><a href="">Location</a></div>
+          <div><a href="">Careers</a></div>
+          <div><a href="">Mobile</a></div>
+          <div><a href="">Blog</a></div>
+          <div><a href="">How We Work</a></div>
         </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="svg" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange" class="bi bi-telegram" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-          </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange" class="bi bi-whatsapp" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-          </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-          </svg></a></li>
-        </ul>
-      </footer>
-    </div>
-  </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+        <div class="footer-box">
+          <h3>WORKING HOURS</h3>
+          <div>Mon - Fri: 9:00AM - 9:00PM</div>
+          <div>Sat: 9:00AM - 19:00PM</div>
+          <div>Sun: Closed</div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
