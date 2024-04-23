@@ -464,6 +464,10 @@ footer {
   .small {
     font-size: 10px;
   }
+  .bg-orange {
+    position: fixed;
+    height: 70px;
+  }
   .fa-bars {
     display: block;
     background-color: black;
