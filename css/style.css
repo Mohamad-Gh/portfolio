@@ -2,6 +2,21 @@
   height: 180px;
   border-radius: 50%;
 }
+
+#About {
+  position: relative;
+}
+#About::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://w0.peakpx.com/wallpaper/738/166/HD-wallpaper-blue-digital-background-technology-digital-technology-coding-concepts-blue-technology-background.jpg");
+  z-index: -1;
+  opacity: 0.9;
+}
 .fab {
   color: red;
 }
@@ -13,7 +28,7 @@ span {
 }
 .blue,
 .footer {
-  background-color: #0770b3;
+  background-color: #032e4e;
 }
 .svg {
   fill: currentColor;
