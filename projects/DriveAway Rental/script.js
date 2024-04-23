@@ -7,10 +7,22 @@ const kia = {
   AC: "Yes",
 };
 
+$("#menu-bar").click(function () {
+  $(".navigator").toggleClass("show-bar");
+});
+$(document).click(function (event) {
+  if (event.target.id != "menu-bar") {
+    $(".navigator").removeClass("show-bar");
+  }
+});
+$(document).on("scroll", function (event) {
+  $(".navigator").removeClass("show-bar");
+});
+
 $(".cars div").click(function () {
   $(".cars div").removeClass("selected");
   $(this).addClass("selected");
-  $(".car-img img").attr("src", `./images/${this.id}.png`);
+  $(".car-img img").attr("src", `./public/images/${this.id}.png`);
   switch (this.id) {
     case "kia":
       $("#price").text(kia["price"]);
